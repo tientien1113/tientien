@@ -5,16 +5,20 @@
     
     <body>
     <div class="container">
-        <header class="bg-primary" style="height: 200px; text-align: center; "><h1></h1> </header>
+        <header class="bg-primary" style="height: 90px; text-align: center; "> </header>
         <nav class="bg-warning text-center" style="height: 40px;"> </nav>
         <main class="bg-light" style="min-height: 200px;"> </main>
-        <footer class="bg-dark" style="height: 80px; color:aliceblue;text-align: center; "> </footer>
+        <footer class="bg-dark" style="height: 80px; color:aliceblue;text-align: center; ">  </footer>
     </div>
     </body> 
-    s
+    
     </html>
     <script src="function.js"></script>
     <script> hienmenu() </script>
-    <script> hienspmoi(20) </script>
+    <script> 
+        const parmas = new URLSearchParams(location.search);
+        let pt = parmas.get('pt');
+        hienspgiamgia(pt) 
+    </script>
     <script> hienselectgiamgia() </script>
     
